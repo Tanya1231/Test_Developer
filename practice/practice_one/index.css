@@ -1,0 +1,85 @@
+.hystmodal {
+  color: #0c1014;
+  position: fixed; /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* цвет фона */
+  z-index: 1050;
+  opacity: 0; /* по умолчанию модальное окно прозрачно */
+  -webkit-transition: opacity 200ms ease-in;
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in; /* анимация перехода */
+  pointer-events: none; /* элемент невидим для событий мыши */
+  margin: 0;
+  padding: 0;
+}
+
+.hystmodal:target {
+  opacity: 1; /* делаем окно видимым */
+  pointer-events: auto; /* элемент видим для событий мыши */
+  overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+
+.hystmodal__window {
+  width: 754px;
+  background-color: gainsboro;
+  margin: 50px auto;
+}
+
+.hystmodal__image {
+  margin-right: 10%;
+}
+.hystmodal__text {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 34px;
+  text-align: left;
+  margin-left: 10%;
+  padding-top: 50px;
+}
+
+.hystmodal__fields {
+  margin-left: 5vw;
+}
+
+.hystmodal__fields-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hystmodal__fields-container-two {
+  display: block;
+  text-align: left;
+}
+
+.hystmodal__field-input {
+  width: 558px;
+  height: 56px;
+  margin: 0 0 35px;
+  opacity: 0px;
+  font-family: PT Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.input {
+  width: 362px;
+  height: 56px;
+  margin: 0 0 35px;
+  opacity: 0px;
+  font-family: PT Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  padding-left: 5%;
+}
+
+input:focus::placeholder {
+  transform: translateY(-20px);
+}

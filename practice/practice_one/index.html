@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <title>Модальное окно</title>
+  </head>
+  <body>
+    <div class="hystmodal" id="openModal">
+    <header class="hystmodal__text">
+    </header>
+      <div class="hystmodal__window">
+        <h1 class="hystmodal__text">
+          Стать партнёром проекта
+        </h1>
+        <form method="POST">
+            <div class="hystmodal__fields-container">
+              <div class="hystmodal__fields">
+            <div class="hystmodal__field" required>
+                <input class="input" type="text" name="text" placeholder="Название организации"></input>
+                </div>
+                <div class="hystmodal__field" required>
+                    <input class="input" type="tel" name="telephone" placeholder="Телефон"></input>
+                    </div>
+                    <div class="hystmodal__field" required>
+                      <input class="input" type="email" name="email" placeholder="E-mail"></input>
+                    </div>
+                      </div>
+                      <div class="hystmodal__image" required>
+                        <img src="./image/image_one.png" type="file" name="file" multiple hidden>Логотип (jpeg, png)</img> 
+            </div>            </div>
+            <div class="hystmodal__fields hystmodal__fields-two">
+              <div class="hystmodal__field">
+                  <input class="hystmodal__field-input" type="text" name="text" placeholder="Направление"></input></div>
+                    <div class="hystmodal__field">
+                        <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></input></div>
+                          <div class="hystmodal__field">
+                              <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></input></div>
+                                <div class="hystmodal__field">
+                                    <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></input></div>
+                                      <div class="hystmodal__field">
+                                          <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></input></div>
+                                            <div class="hystmodal__field">
+                                                <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></input></div>
+                                                  <div class="hystmodal__field">
+                                                      <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></input></div>
+                                                        <div class="hystmodal__field">
+                                                            <input class="hystmodal__field-input" type="text" name="text" placeholder="Руководитель"></input></div>
+            </div>
+          </form>
+        <div class="hystmodal__buttons">
+          <button data-hystclose class="hystmodal__submit" type="submit">
+            Стать партнёром проекта
+          </button>
+          <button data-hystclose class="hystmodal__close" type="button">
+            Отменить
+          </button>
+        </div>
+      </div>
+    </div>
+    <button><a href="#openModal">Открыть модальное окно</a></button>
+  </body>
+</html>
