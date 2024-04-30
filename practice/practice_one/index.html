@@ -8,6 +8,7 @@
     <title>Модальное окно</title>
   </head>
   <body>
+    <header></header>
     <div class="hystmodal" id="openModal">
     <header class="hystmodal__text">
     </header>
@@ -15,39 +16,49 @@
         <h1 class="hystmodal__text">
           Стать партнёром проекта
         </h1>
-        <form method="POST">
+        <form method="POST" name="form">
             <div class="hystmodal__fields-container">
               <div class="hystmodal__fields">
             <div class="hystmodal__field" required>
-                <input class="input" type="text" name="text" placeholder="Название организации">
+              <label class="hystmodal__field">
+                <input class="input" required type="text" name="text"><span placeholder=' Название организации'></span>
+              </label>
                 </div>
                 <div class="hystmodal__field" required>
-                    <input class="input" type="tel" name="telephone" placeholder="Телефон">
+                  <label class="hystmodal__field">
+                    <input class="input" required type="tel" name="telephone"><span placeholder=' Телефон'></span>
+                  </label>
                     </div>
                     <div class="hystmodal__field" required>
-                      <input class="input" type="email" name="email" placeholder="E-mail">
+                      <label class="hystmodal__field">
+                        <input class="input" required type="email" name="email"><span placeholder=' Email'></span>
+                      </label>
                     </div>
                       </div>
                       <div class="hystmodal__image" required>
-                        <img src="./image/image_one.png" type="file" name="file" multiple hidden>Логотип (jpeg, png)</img> 
+                        <img src="./image/image_one.png"></img> 
+                        <label class="hystmodal__field">
+                          <input class="input" required type="file" multiple hidden><span placeholder=' Логотип (jpeg, png)'></span>
+                        </label>
             </div>            </div>
             <div class="hystmodal__fields hystmodal__fields-two">
-              <div class="hystmodal__field">
-                  <input class="hystmodal__field-input" type="text" name="text" placeholder="Направление"></div>
+                <label class="hystmodal__field">
+                  <input class="input" required><span placeholder=' Направление'></span>
+                </label>
                     <div class="hystmodal__field">
-                        <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></div>
+                        <input class="hystmodal__field-input avc image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
                           <div class="hystmodal__field">
-                              <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></div>
+                              <input class="hystmodal__field-input vk image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
                                 <div class="hystmodal__field">
-                                    <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></div>
+                                    <input class="hystmodal__field-input odnoklassniki image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
                                       <div class="hystmodal__field">
-                                          <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></div>
+                                          <input class="hystmodal__field-input fc image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
                                             <div class="hystmodal__field">
-                                                <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></div>
+                                                <input class="hystmodal__field-input instagram image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
                                                   <div class="hystmodal__field">
-                                                      <input class="hystmodal__field-input" type="text" name="text" placeholder="Ссылка на соцсети"></div>
+                                                      <input class="hystmodal__field-input  image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
                                                         <div class="hystmodal__field">
-                                                            <input class="hystmodal__field-input" type="text" name="text" placeholder="Руководитель"></div>
+                                                            <input class="hystmodal__field-input" type="text" name="link" placeholder="Руководитель"></div>
             </div>
           </form>
         <div class="hystmodal__buttons">
@@ -60,6 +71,6 @@
         </div>
       </div>
     </div>
-    <button><a href="#openModal">Написать</a></button>
+    <footer><button><a href="#openModal">Написать</a></button></footer>
   </body>
 </html>

@@ -26,7 +26,6 @@
   width: 754px;
   margin: 50px auto;
   background: rgba(255, 255, 255, 1);
-
 }
 
 .hystmodal__image {
@@ -69,6 +68,8 @@
 }
 
 .input {
+  outline: none;
+  box-sizing: border-box;
   width: 362px;
   height: 56px;
   margin: 0 0 35px;
@@ -87,41 +88,125 @@ input:focus::placeholder {
 
 .hystmodal__submit {
   width: 557px;
-height: 48px;
-gap: 0px;
-opacity: 0px;
-background: rgba(229, 38, 110, 1);
-font-family: Lato;
-font-size: 16px;
-font-weight: 600;
-line-height: 18px;
-text-align: center;
-color: rgba(255, 255, 255, 1);
-margin-bottom: 10px;
-border: none;
-border-radius: 8px;
-text-align: center;
-margin: 0 auto;
-margin-bottom: 20px;
+  height: 48px;
+  gap: 0px;
+  opacity: 0px;
+  background: rgba(229, 38, 110, 1);
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .hystmodal__close {
   font-family: PT Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-text-align: left;
-color: rgba(8, 72, 192, 1);
-background: none;
-text-align: center;
-border: none;
-margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(8, 72, 192, 1);
+  background: none;
+  text-align: center;
+  border: none;
+  margin-bottom: 20px;
 }
-.hystmodal__close a{
-text-decoration: none;
+.hystmodal__close a {
+  text-decoration: none;
 }
 
 .hystmodal__buttons {
   display: flex;
   flex-direction: column;
+}
+
+label {
+  position: relative;
+  float: left;
+}
+
+label span {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-family: Segoe UI;
+  font-size: 14px;
+  cursor: text;
+}
+
+input {
+  padding: 6px 10px 6px 10px;
+  outline: none;
+  font-family: Segoe UI;
+  font-size: 14px;
+}
+
+input:invalid + span::after {
+  content: attr(placeholder);
+  position: relative;
+  color: #999;
+}
+
+input:invalid + span:before {
+  content: "*";
+  position: relative;
+  color: red;
+}
+
+ul.drop {
+  display: none;
+  list-style-type: none;
+  padding-left: 0;
+  border: 1px solid #ddd;
+  margin-top: 0;
+  width: 210px;
+}
+
+li {
+  margin: 2px;
+}
+
+li:hover {
+  background: yellow;
+}
+
+ul.drop.visible {
+  display: block;
+}
+
+.vk {
+  background-image: url(./image/vk.svg);
+}
+
+.avc {
+  background-image: url(./image/avc.svg);
+}
+
+.odnoklassniki {
+  background-image: url(./image/odnoklassniki.svg);
+}
+
+.fc {
+  background-image: url(./image/fc.svg);
+}
+
+.instagram {
+  background-image: url(./image/instagram.svg);
+}
+
+.youtube {
+  background-image: url(./image/youtube.svg);
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: 95% 50%;
 }
