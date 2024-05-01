@@ -9,6 +9,8 @@
   </head>
   <body>
     <header></header>
+    <main><section class="main"><h2 class="main__text">Требование к заявке</h2><h2 class="main__text">Возможности приобрести навыки</h2></section></main>
+    <footer><button class="footer__button"><a href="#openModal">Написать</a></button></footer>
     <div class="hystmodal" id="openModal">
     <header class="hystmodal__text">
     </header>
@@ -21,56 +23,53 @@
               <div class="hystmodal__fields">
             <div class="hystmodal__field" required>
               <label class="hystmodal__field">
-                <input class="input" required type="text" name="text"><span placeholder=' Название организации'></span>
+                <input class="input" required type="text" name="text"><span class="input__text"><span class="red">✱</span> Название организации</span>
               </label>
                 </div>
                 <div class="hystmodal__field" required>
                   <label class="hystmodal__field">
-                    <input class="input" required type="tel" name="telephone"><span placeholder=' Телефон'></span>
+                    <input class="input" required type="tel" name="telephone"><span class="input__text"><span class="red">✱</span> Телефон</span>
                   </label>
                     </div>
                     <div class="hystmodal__field" required>
                       <label class="hystmodal__field">
-                        <input class="input" required type="email" name="email"><span placeholder=' Email'></span>
+                        <input class="input" required type="email" name="email"><span class="input__text"><span class="red">✱</span> Email</span>
                       </label>
                     </div>
                       </div>
                       <div class="hystmodal__image" required>
-                        <img src="./image/image_one.png"></img> 
-                        <label class="hystmodal__field">
-                          <input class="input" required type="file" multiple hidden><span placeholder=' Логотип (jpeg, png)'></span>
-                        </label>
+                        <label class="hystmodal__field_image">
+                          <input class="input input_image" id="input_image"  aria-labelledby="image"
+                          aria-describedby="image"required type="file" multiple hidden><span class="input__text"><span class="red">✱</span> Логотип (jpeg, png)</span>
+                          <img src="./image/image_one.png" id="avatar"></img> </label>
             </div>            </div>
             <div class="hystmodal__fields hystmodal__fields-two">
-                <label class="hystmodal__field">
-                  <input class="input" required><span placeholder=' Направление'></span>
-                </label>
+                <label class="hystmodal__field dropdown">
+                  <input class="hystmodal__field-input image" required name="select"><span class="input__text"><span class="red">✱</span> Направление</span></label>
                     <div class="hystmodal__field">
-                        <input class="hystmodal__field-input avc image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
+                        <input class="hystmodal__field-input avc image" type="text" name="link"></div>
                           <div class="hystmodal__field">
-                              <input class="hystmodal__field-input vk image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
+                              <input class="hystmodal__field-input vk image" type="text" name="link"></div>
                                 <div class="hystmodal__field">
-                                    <input class="hystmodal__field-input odnoklassniki image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
+                                    <input class="hystmodal__field-input odnoklassniki image" type="text" name="link"></div>
                                       <div class="hystmodal__field">
-                                          <input class="hystmodal__field-input fc image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
+                                          <input class="hystmodal__field-input fc image" type="text" name="link"></div>
                                             <div class="hystmodal__field">
-                                                <input class="hystmodal__field-input instagram image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
+                                                <input class="hystmodal__field-input instagram image" type="text" name="link"></div>
                                                   <div class="hystmodal__field">
-                                                      <input class="hystmodal__field-input  image" type="text" name="link" placeholder="Ссылка на соцсети"></div>
+                                                      <input class="hystmodal__field-input youtube image" type="text" name="link"></div>
                                                         <div class="hystmodal__field">
-                                                            <input class="hystmodal__field-input" type="text" name="link" placeholder="Руководитель"></div>
-            </div>
-          </form>
-        <div class="hystmodal__buttons">
+                                                            <input class="hystmodal__field-input image" type="text" name="text"><label><span class="input__text">Руководитель</span></label></div>
+                                                          </div><div class="hystmodal__buttons">
           <button class="hystmodal__submit" type="submit">
             Стать партнёром проекта
           </button>
           <button class="hystmodal__close" type="button"><a href="#close">
             Отменить</a>
           </button>
-        </div>
       </div>
+      </div>
+                </form>
     </div>
-    <footer><button><a href="#openModal">Написать</a></button></footer>
   </body>
 </html>
